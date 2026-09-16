@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Lead Qualification Assistant | Nimbus Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-badge">Nimbus Software</div>
+      <h1>Sales Lead Qualification Assistant</h1>
+      <p class="subtitle">AI-assisted requirement qualification, product matching, and sales insights powered by TF-IDF retrieval and Groq LLM.</p>
+    </header>
+
+    <!-- Top Action / Knowledge Base Toggle -->
+    <div class="kb-toggle-bar">
+      <button id="toggle-kb-btn" class="btn btn-secondary btn-sm" type="button">
+        📚 Browse Knowledge Base (<span id="kb-count-label">12 Products</span>)
+      </button>
+      <span id="backend-status" class="status-indicator">Connecting to API...</span>
+    </div>
+
+    <!-- Knowledge Base Panel (collapsible) -->
+    <div id="kb-panel" class="kb-panel hidden">
+      <h3>Nimbus Software Product Catalog</h3>
+      <div id="kb-grid" class="kb-grid">Loading products...</div>
+    </div>
+
+    <!-- Main Qualification Card -->
+    <section class="card form-card">
+      <div class="card-header">
+        <h2>Inbound Lead Intake</h2>
+      </div>
+
+      <!-- Try Example Buttons -->
+      <div class="examples-section">
+        <span class="examples-label">Try an example:</span>
+        <div class="example-buttons">
+          <button type="button" class="btn-chip" data-example="support">Customer Support & SSO</button>
+          <button type="button" class="btn-chip" data-example="sales">Outbound Sales & CRM</button>
+          <button type="button" class="btn-chip" data-example="billing">Subscriptions & Tax Compliance</button>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="lead-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="company_name">Company Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="company_name" name="company_name" placeholder="e.g. Apex Global Logistics" maxlength="255">
+          </div>
+          <div class="form-group">
+            <label for="contact_email">Contact Email <span class="optional">(Optional)</span></label>
+            <input type="email" id="contact_email" name="contact_email" placeholder="e.g. buyer@apexlogistics.com" maxlength="255">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label-row">
+            <label for="requirement">Customer Requirement <span class="required">*</span></label>
+            <span id="char-counter" class="char-counter">0 / 2000 chars (min 15)</span>
+          </div>
+          <textarea id="requirement" name="requirement" rows="5" placeholder="Describe the customer's business context, pain points, requested features, or team requirements..." maxlength="2000" required></textarea>
+        </div>
+
+        <div id="client-error" class="inline-error hidden"></div>
+
+        <div class="form-actions">
+          <button type="submit" id="submit-btn" class="btn btn-primary">
+            <span class="btn-text">Analyze Lead</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Loading State -->
+      <div id="loading-state" class="state-container hidden">
+        <div class="spinner"></div>
+        <p class="loading-title">Analyzing Lead...</p>
+        <p class="loading-subtitle">Searching knowledge base with TF-IDF and synthesizing structured qualification notes with Groq LLM.</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" class="state-container error-container hidden">
+        <div class="error-header">
+          <strong>⚠️ Qualification Error</strong>
+        </div>
+        <div id="error-message" class="error-message">An error occurred while processing the lead.</div>
+      </div>
+    </section>
+
+    <!-- Qualification Result Section -->
+    <section id="result-section" class="card result-card hidden">
+      <div class="result-header">
+        <div>
+          <span class="result-pretitle">Qualification Output</span>
+          <h2 id="result-company-title">Lead Analysis Result</h2>
+          <span id="result-meta" class="result-meta"></span>
+        </div>
+        <div class="score-container">
+          <div class="score-circle">
+            <span id="result-score" class="score-value">0</span>
+            <span class="score-label">Fit Score</span>
+          </div>
+          <div id="result-priority-pill" class="priority-pill priority-medium">Medium</div>
+        </div>
+      </div>
+
+      <!-- Lead Summary -->
+      <div class="analysis-block">
+        <h3>Executive Summary</h3>
+        <p id="result-summary" class="summary-text"></p>
+      </div>
+
+      <!-- Relevant Products -->
+      <div class="analysis-block">
+        <h3>Matched Products</h3>
+        <div id="result-products" class="products-list"></div>
+      </div>
+
+      <!-- Customer Needs -->
+      <div class="analysis-block">
+        <h3>Identified Customer Needs</h3>
+        <ul id="result-needs" class="styled-list"></ul>
+      </div>
+
+      <!-- Next Step & Follow-ups -->
+      <div class="analysis-grid">
+        <div class="analysis-block callout-block">
+          <h3>Recommended Next Step</h3>
+          <p id="result-next-step" class="next-step-text"></p>
+        </div>
+        <div class="analysis-block">
+          <h3>Suggested Follow-up Questions</h3>
+          <ol id="result-questions" class="styled-ol"></ol>
+        </div>
+      </div>
+
+      <!-- Retrieved Context (Collapsible) -->
+      <details class="retrieval-details">
+        <summary class="retrieval-summary">
+          🔍 View Retrieved Knowledge Base Context (<span id="retrieved-count">0</span> matches)
+        </summary>
+        <div id="retrieved-items" class="retrieved-items"></div>
+      </details>
+    </section>
+
+    <!-- Recent Leads Section -->
+    <section class="card recent-card">
+      <div class="card-header flex-between">
+        <h2>Recent Leads History</h2>
+        <button type="button" id="refresh-leads-btn" class="btn btn-secondary btn-sm">Refresh</button>
+      </div>
+      <div id="recent-leads-list" class="recent-leads-list">
+        <p class="empty-state">Loading recent leads...</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Nimbus Software Lead Qualification Assistant &bull; Powered by FastAPI &amp; Groq Llama-3.3-70B</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

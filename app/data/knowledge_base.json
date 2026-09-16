@@ -1,0 +1,289 @@
+[
+  {
+    "id": "nimbus-crm",
+    "name": "NimbusCRM",
+    "category": "CRM",
+    "description": "NimbusCRM is a comprehensive customer relationship management platform built for growing B2B sales teams. It streamlines contact management, pipeline visualization, and deal tracking from initial contact to close. Native email synchronization and automated forecasting provide deep visibility into your sales velocity.",
+    "features": [
+      "Contact and account management",
+      "Visual pipeline deal stages",
+      "Bi-directional email and calendar sync",
+      "Revenue and quota forecasting",
+      "Activity timeline tracking"
+    ],
+    "ideal_for": "B2B sales teams looking to organize leads, standardize deal stages, and forecast revenue accurately.",
+    "keywords": [
+      "crm",
+      "pipeline",
+      "deals",
+      "contacts",
+      "sales",
+      "forecasting",
+      "email sync",
+      "accounts"
+    ]
+  },
+  {
+    "id": "leadflow-automation",
+    "name": "LeadFlow Automation",
+    "category": "Marketing Automation",
+    "description": "LeadFlow Automation powers targeted inbound and outbound marketing campaigns with visual workflow builders. Capture leads via high-converting landing pages, score them based on engagement, and nurture prospects automatically with drip emails. Real-time attribution ensures marketing and sales teams stay aligned on high-intent opportunities.",
+    "features": [
+      "Automated drip campaigns",
+      "Behavioral lead scoring",
+      "Drag-and-drop landing page builder",
+      "Multi-touch campaign attribution",
+      "Dynamic email personalization"
+    ],
+    "ideal_for": "Marketing teams looking to automate lead generation, qualify prospects through behavioral scoring, and run drip sequences.",
+    "keywords": [
+      "marketing automation",
+      "drip campaigns",
+      "lead scoring",
+      "landing pages",
+      "nurturing",
+      "email marketing",
+      "inbound leads",
+      "attribution"
+    ]
+  },
+  {
+    "id": "insightbi-analytics",
+    "name": "InsightBI Analytics",
+    "category": "Analytics/BI",
+    "description": "InsightBI Analytics transforms complex business data into intuitive real-time dashboards and executive reports. Connect multiple data sources seamlessly to track core metrics, monitor pipeline health, and configure automated KPI anomaly alerts. Scheduled exports and interactive drill-downs empower every stakeholder to make data-driven decisions.",
+    "features": [
+      "Real-time executive dashboards",
+      "Custom ad-hoc report builder",
+      "Scheduled PDF/CSV exports",
+      "Proactive KPI anomaly alerts",
+      "Interactive drill-down charts"
+    ],
+    "ideal_for": "Data analysts and business leaders needing centralized dashboards, custom reporting, and automated performance tracking.",
+    "keywords": [
+      "analytics",
+      "bi",
+      "business intelligence",
+      "dashboards",
+      "reports",
+      "kpi alerts",
+      "metrics",
+      "data visualization"
+    ]
+  },
+  {
+    "id": "connectdesk-helpdesk",
+    "name": "ConnectDesk Helpdesk",
+    "category": "Customer Support",
+    "description": "ConnectDesk Helpdesk is a modern ticketing and customer service platform that keeps support teams responsive and organized. Manage omnichannel customer inquiries, enforce SLA policies, and maintain an intuitive self-service knowledge base. Automated CSAT surveys and agent productivity metrics ensure consistently high customer satisfaction.",
+    "features": [
+      "Omnichannel ticket management",
+      "Automated SLA tracking and escalations",
+      "Self-service knowledge base portal",
+      "Automated CSAT customer feedback surveys",
+      "Support agent performance reporting"
+    ],
+    "ideal_for": "Support and customer success teams overwhelmed with inbound tickets seeking SLA compliance and customer satisfaction tracking.",
+    "keywords": [
+      "customer support",
+      "helpdesk",
+      "ticketing",
+      "sla tracking",
+      "knowledge base",
+      "csat",
+      "customer service",
+      "support tickets"
+    ]
+  },
+  {
+    "id": "secureauth-sso",
+    "name": "SecureAuth SSO",
+    "category": "Identity & Access",
+    "description": "SecureAuth SSO delivers enterprise-grade identity and access governance across all corporate cloud applications. It supports industry-standard SAML 2.0 and OIDC single sign-on protocols paired with flexible multi-factor authentication. Granular role-based access control and adaptive session policies protect sensitive data while satisfying strict IT security audits.",
+    "features": [
+      "SAML 2.0 and OIDC Single Sign-On",
+      "Adaptive Multi-Factor Authentication (MFA)",
+      "Role-Based Access Control (RBAC)",
+      "Contextual session and device policies",
+      "Directory sync with Okta, Azure AD, and Google"
+    ],
+    "ideal_for": "IT and security administrators requiring centralized single sign-on, mandatory MFA, and role-based access management.",
+    "keywords": [
+      "sso",
+      "single sign-on",
+      "saml",
+      "oidc",
+      "mfa",
+      "rbac",
+      "identity access",
+      "authentication",
+      "security policies"
+    ]
+  },
+  {
+    "id": "databridge-hub",
+    "name": "DataBridge Integration Hub",
+    "category": "Integration/iPaaS",
+    "description": "DataBridge Integration Hub unifies your SaaS ecosystem with pre-built connectors and robust automated data workflows. Run scheduled ETL batch jobs, trigger real-time webhooks, and map disparate data schemas without writing complex code. Reliable retry mechanisms and visual logging ensure data consistency across your CRM, ERP, and internal databases.",
+    "features": [
+      "200+ pre-built cloud application connectors",
+      "Visual field mapping and transformation",
+      "Scheduled batch ETL and sync jobs",
+      "Real-time webhook triggers and delivery",
+      "Automated error handling and retries"
+    ],
+    "ideal_for": "Engineering and operations teams needing seamless integration, webhook orchestration, and automated data synchronization between disparate SaaS tools.",
+    "keywords": [
+      "integration",
+      "ipaas",
+      "connectors",
+      "etl",
+      "webhooks",
+      "field mapping",
+      "api integration",
+      "data sync"
+    ]
+  },
+  {
+    "id": "chatassist-ai",
+    "name": "ChatAssist AI",
+    "category": "Conversational AI",
+    "description": "ChatAssist AI is an intelligent conversational agent that engages website visitors and resolves repetitive customer support inquiries around the clock. Powered by domain-trained language models, it deflects routine tickets while offering seamless human handoff when complex issues arise. Multi-language support and automated lead qualification ensure every conversation drives value.",
+    "features": [
+      "Website live chat widget with AI bot",
+      "Automated routine ticket deflection",
+      "Seamless warm transfer to human agents",
+      "Multilingual conversational support",
+      "Visitor intent recognition and lead qualification"
+    ],
+    "ideal_for": "Companies wanting 24/7 front-line customer engagement, automated ticket deflection, and intelligent website chatbots.",
+    "keywords": [
+      "chatbot",
+      "conversational ai",
+      "ai assistant",
+      "ticket deflection",
+      "live chat",
+      "multilingual",
+      "human handoff",
+      "virtual agent"
+    ]
+  },
+  {
+    "id": "fieldops-mobile",
+    "name": "FieldOps Mobile",
+    "category": "Field Service",
+    "description": "FieldOps Mobile coordinates technicians, work orders, and field service operations with real-time mobile scheduling. Dispatchers can optimize travel routes, assign jobs based on technician skills, and track job progress in real-time. A resilient offline mode ensures field workers can update tickets, capture signatures, and log parts even in remote areas.",
+    "features": [
+      "Dynamic technician scheduling and dispatch",
+      "Intelligent GPS route optimization",
+      "Offline-first mobile app with auto-sync",
+      "Digital work orders and customer signatures",
+      "Parts inventory and asset tracking"
+    ],
+    "ideal_for": "Service organizations and field technician teams requiring mobile work orders, route planning, and offline dispatch functionality.",
+    "keywords": [
+      "field service",
+      "mobile dispatch",
+      "technician scheduling",
+      "route optimization",
+      "offline mode",
+      "work orders",
+      "field operations"
+    ]
+  },
+  {
+    "id": "billingpro",
+    "name": "BillingPro",
+    "category": "Billing & Payments",
+    "description": "BillingPro manages modern subscription billing, recurring payments, and complex usage-based pricing models. Automate invoice generation, dunning workflows for failed credit cards, and multi-jurisdiction sales tax calculation with full compliance. Comprehensive revenue recognition and churn reports provide transparent financial clarity.",
+    "features": [
+      "Subscription lifecycle and recurring billing",
+      "Usage-based and metered billing models",
+      "Automated dunning and smart payment retries",
+      "Global tax and VAT compliance calculation",
+      "Automated invoicing and payment gateway integration"
+    ],
+    "ideal_for": "SaaS and subscription businesses needing recurring billing, metered usage calculations, dunning automation, and tax compliance.",
+    "keywords": [
+      "billing",
+      "payments",
+      "invoicing",
+      "subscriptions",
+      "usage-based pricing",
+      "dunning",
+      "sales tax",
+      "revenue recognition"
+    ]
+  },
+  {
+    "id": "teamsync-collaboration",
+    "name": "TeamSync Collaboration",
+    "category": "Internal Collaboration",
+    "description": "TeamSync Collaboration keeps distributed teams connected through persistent team channels, real-time messaging, and shared project spaces. Collaborate seamlessly on rich documents, organize work across Kanban boards, and launch instant video huddles. Deep search and guest access make cross-functional and client teamwork effortless.",
+    "features": [
+      "Organized topic channels and direct messaging",
+      "Kanban project boards and sprint views",
+      "Collaborative real-time document editing",
+      "One-click video huddles and screen sharing",
+      "Unified file search and third-party integrations"
+    ],
+    "ideal_for": "Remote and hybrid teams seeking an all-in-one workspace for team communication, project boards, and collaborative docs.",
+    "keywords": [
+      "collaboration",
+      "team chat",
+      "project boards",
+      "docs",
+      "video huddles",
+      "messaging",
+      "kanban",
+      "internal communication"
+    ]
+  },
+  {
+    "id": "complianceguard",
+    "name": "ComplianceGuard",
+    "category": "Governance/Compliance",
+    "description": "ComplianceGuard automates continuous regulatory compliance, data residency controls, and security auditing for enterprise environments. It collects audit-ready evidence for SOC 2, ISO 27001, and HIPAA while managing GDPR and CCPA data subject access requests. Immutable audit trails and automated compliance alerts reduce risk and streamline vendor risk assessments.",
+    "features": [
+      "Comprehensive immutable audit logging",
+      "GDPR and CCPA automated request tooling",
+      "Continuous SOC 2 and ISO 27001 evidence collection",
+      "Regional data residency policy enforcement",
+      "Automated risk assessment and compliance alerts"
+    ],
+    "ideal_for": "Regulated organizations, legal teams, and security officers requiring automated audit evidence, GDPR tooling, and data residency governance.",
+    "keywords": [
+      "compliance",
+      "governance",
+      "audit logs",
+      "gdpr",
+      "soc 2",
+      "data residency",
+      "iso 27001",
+      "regulatory"
+    ]
+  },
+  {
+    "id": "scalecloud-infra",
+    "name": "ScaleCloud Infrastructure",
+    "category": "Infrastructure",
+    "description": "ScaleCloud Infrastructure provides high-performance, containerized cloud infrastructure designed for mission-critical enterprise workloads. Benefit from automated horizontal pod autoscaling, zero-downtime multi-region deployments, and 99.99% uptime SLAs. Intelligent global load balancing and DDoS mitigation protect your applications against traffic spikes and outages.",
+    "features": [
+      "Dynamic horizontal autoscaling",
+      "Multi-region active-active deployments",
+      "Intelligent global load balancing",
+      "99.99% uptime service level agreement",
+      "DDoS mitigation and web application firewall"
+    ],
+    "ideal_for": "Engineering organizations needing reliable multi-region hosting, automated scaling, and high-availability enterprise infrastructure.",
+    "keywords": [
+      "cloud infrastructure",
+      "autoscaling",
+      "multi-region",
+      "uptime sla",
+      "load balancing",
+      "high availability",
+      "cloud hosting"
+    ]
+  }
+]
